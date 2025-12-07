@@ -54,3 +54,6 @@ json-schema-generator/
 
 ```
 
+## License
+
+MIT License — free to use and modify.
