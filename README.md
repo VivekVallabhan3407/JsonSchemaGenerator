@@ -23,6 +23,18 @@ Built with React + TypeScript for developers who frequently work with structured
 
 -  No backend, no database — 100% client-side
 
+
+## Tech Stack
+
+- ⚡ Vite (Build tool)
+
+- ⚛️ React + TypeScript (Frontend)
+
+- 🎨 CSS Modules for styling
+
+- 🔔 React-Toastify for notifications
+
+
 ## 📁 Project Structure
 
 ```
@@ -41,3 +53,4 @@ json-schema-generator/
 
 
 ```
+
