@@ -23,3 +23,21 @@ Built with React + TypeScript for developers who frequently work with structured
 
 -  No backend, no database — 100% client-side
 
+## 📁 Project Structure
+
+```
+json-schema-generator/
+├── README.md
+├── node_modules
+├── public
+├── src
+    ├── assets
+    ├── App.css
+    ├── App.jsx
+    ├── index.css
+    └── main.tsx
+└── index.html
+
+
+
+```
