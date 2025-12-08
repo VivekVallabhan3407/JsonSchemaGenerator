@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+.leftPane {
+  width: 50%;
+}
+
+.rightPane {
+  width: 50%;
+}
