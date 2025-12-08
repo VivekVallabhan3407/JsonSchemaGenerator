@@ -54,6 +54,8 @@ json-schema-generator/
         └── Copy-button.tsx
     ├── hooks
         └── useStateJson.ts
+    ├── pages
+        └── Home.tsx
     ├── App.css
     ├── App.jsx
     ├── index.css
