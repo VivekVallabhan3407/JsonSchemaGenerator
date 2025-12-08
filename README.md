@@ -44,6 +44,14 @@ json-schema-generator/
 ├── public
 ├── src
     ├── assets
+    ├── components
+        ├── JsonInput
+        ├   ├── JsonInput.css
+        ├   └── JsonInput.tsx
+        └── OutputPanel
+            ├── OutputPanel.css
+            └── OutputPanel.tsx
+    ├── App.css
     ├── App.css
     ├── App.jsx
     ├── index.css
