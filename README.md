@@ -51,6 +51,7 @@ json-schema-generator/
         └── OutputPanel
             ├── OutputPanel.css
             └── OutputPanel.tsx
+        └── Copy-button.tsx
     ├── App.css
     ├── App.css
     ├── App.jsx
