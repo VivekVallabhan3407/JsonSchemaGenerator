@@ -52,7 +52,8 @@ json-schema-generator/
             ├── OutputPanel.css
             └── OutputPanel.tsx
         └── Copy-button.tsx
-    ├── App.css
+    ├── hooks
+        └── useStateJson.ts
     ├── App.css
     ├── App.jsx
     ├── index.css
