@@ -56,6 +56,8 @@ json-schema-generator/
         └── useStateJson.ts
     ├── pages
         └── Home.tsx
+    ├── styles
+        └── global.css
     ├── App.css
     ├── App.jsx
     ├── index.css
