@@ -1,0 +1,55 @@
+.outputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.outputBlock {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.outputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outputHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.copyBtn {
+  padding: 6px 12px;
+  background: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.copyBtn:hover {
+  background: #005fcc;
+}
+
+.outputBox {
+  background: #f7f7f7;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: "Consolas", monospace;
+  font-size: 0.95rem;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
