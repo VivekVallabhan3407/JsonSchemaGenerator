@@ -4,6 +4,8 @@
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #dcdcdc;
+  min-width: 300px;
+  max-width: 500px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -21,6 +23,8 @@
   padding: 12px;
   font-size: 14px;
   font-family: Consolas, monospace;
+  min-width: 280px;
+  max-width: 480px;
   border: 1px solid #ccc;
   border-radius: 6px;
   outline: none;
