@@ -1,13 +1,26 @@
+/* .body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: row;
+} */
+
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /* FIX */
+  align-items: center;     /* centers horizontally */
   padding: 20px;
+  width: 100%;
 }
+
 
 .main {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;      /* centers the whole layout */
+  margin: 0 auto;
+  /* centers the whole layout */
   display: flex;
   gap: 40px;
   align-items: flex-start;
@@ -28,13 +41,9 @@
   opacity: 0.7;
 }
 
-.leftPane {
-  width: 50%;
-  display: flex;
-  justify-content: center; /* centers the input box inside its half */
-}
-
+.leftPane,
 .rightPane {
-  width: 50%;
-  padding-top: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
