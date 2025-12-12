@@ -1,3 +1,11 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 .main {
   max-width: 1200px;
   margin: auto;
@@ -7,12 +15,6 @@
   gap: 20px;
 }
 
-
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
 
 .header {
   text-align: center;
