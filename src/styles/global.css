@@ -47,3 +47,10 @@
   display: flex;
   justify-content: center;
 }
+
+.rightPane{
+  width: 50%;
+  flex-direction: column;
+  gap: 20px;
+  height:100%
+}
