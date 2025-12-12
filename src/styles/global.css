@@ -1,7 +1,12 @@
 .main {
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
 }
+
 
 .container {
   display: flex;
@@ -24,10 +29,6 @@
   opacity: 0.7;
 }
 
-.main {
-  display: flex;
-  gap: 20px;
-}
 
 .leftPane {
   width: 50%;

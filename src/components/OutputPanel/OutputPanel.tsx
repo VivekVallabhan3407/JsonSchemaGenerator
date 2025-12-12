@@ -6,8 +6,8 @@ import "./OutputPanel.css";
 
 const OutputPanel: React.FC = () => {
   const { jsonObject } = useStateJson();
-  const [schema, setSchema] = useState("");
-  const [tsType, setTsType] = useState("");
+  const [schema, setSchema] = useState<string | null>();
+  const [tsType, setTsType] = useState<string | null>();
 
   useEffect(() => {
     if (!jsonObject) return;
@@ -34,24 +34,24 @@ const OutputPanel: React.FC = () => {
       <div className="outputBlock">
         <div className="outputHeader">
           <h3>JSON Schema</h3>
-          <button onClick={() => copyToClipboard(schema)} className="copyBtn">
+          <button onClick={() => copyToClipboard(schema ?? "")} className="copyBtn">
             Copy
           </button>
         </div>
 
-        <pre className="outputBox">{schema}</pre>
+        <pre className="outputBox">{schema || ""}</pre>
       </div>
 
       {/* TypeScript Output */}
       <div className="outputBlock">
         <div className="outputHeader">
           <h3>TypeScript Type</h3>
-          <button onClick={() => copyToClipboard(tsType)} className="copyBtn">
+          <button onClick={() => copyToClipboard(tsType ?? "")} className="copyBtn">
             Copy
           </button>
         </div>
 
-        <pre className="outputBox">{tsType}</pre>
+        <pre className="outputBox">{tsType || ""}</pre>
       </div>
     </div>
   );
