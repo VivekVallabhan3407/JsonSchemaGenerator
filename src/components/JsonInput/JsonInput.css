@@ -1,4 +1,4 @@
-.jsonInput-container {
+.jsonInputContainer {
   width: 100%;
   padding: 20px;
   border-radius: 8px;
@@ -6,18 +6,18 @@
   background: #fff;
 }
 
-.jsonInput-textarea {
-  width: 100%;
-  height: 600px;     /* BIGGER TEXTAREA */
+.textarea {
+  width: 90%;
+  height: 400px;     /* BIGGER TEXTAREA */
   resize: vertical;
-  padding: 12px;
+  padding: 9px;
   font-size: 14px;
   font-family: Consolas, monospace;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
 
-.jsonInput-heading {
+.heading {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -25,12 +25,12 @@
 }
 
 
-.jsonInput-textarea:focus {
+.textarea:focus {
   border-color: #4a90e2;
   box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
 }
 
-.jsonInput-error {
+.error {
   color: #e63946;
   margin-top: 6px;
   font-size: 14px;
@@ -52,20 +52,21 @@
   transition: 0.2s ease;
 }
 
-.jsonInput-btn.generate {
+.jsonInput-btn.generateBtn {
+  background: #007bff;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.jsonInput-btn.generateBtn:hover {
+  background: #0064d6;
+}
+
+.jsonInput-btn.formatBtn {
   background: #007bff;
   color: white;
 }
 
-.jsonInput-btn.generate:hover {
+.jsonInput-btn.formatBtn:hover {
   background: #0064d6;
-}
-
-.jsonInput-btn.format {
-  background: #f1f1f1;
-  color: #333;
-}
-
-.jsonInput-btn.format:hover {
-  background: #e2e2e2;
 }

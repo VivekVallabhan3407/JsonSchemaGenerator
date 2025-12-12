@@ -49,10 +49,10 @@ const JsonInput: React.FC = () => {
       {error && <p className="error">{error}</p>}
 
       <div className="buttons">
-        <button onClick={handleProcess} className="generateBtn">
+        <button onClick={handleProcess} className="jsonInput-btn generateBtn">
           Generate
         </button>
-        <button onClick={handleFormat} className="formatBtn">
+        <button onClick={handleFormat} className="jsonInput-btn formatBtn">
           Format JSON
         </button>
       </div>
