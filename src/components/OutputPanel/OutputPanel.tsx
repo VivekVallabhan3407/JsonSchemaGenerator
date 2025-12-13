@@ -27,6 +27,18 @@ const OutputPanel: React.FC = () => {
     alert("Copied!");
   };
 
+  const handleDownloadSchema=()=>{
+    if(!schema) return;
+
+    downloadFile(schema,"schema.json","application/json");
+  };
+
+  const handleDownloadTs=()=>{
+    if(!tsType) return;
+
+    downloadFile(tsType,"types.ts","text/typescript");
+  };
+  
   return (
     <div className="outputContainer">
       <h2 className="heading">Output</h2>
