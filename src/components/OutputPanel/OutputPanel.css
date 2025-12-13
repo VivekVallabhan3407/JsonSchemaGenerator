@@ -20,7 +20,9 @@
   border-radius: 8px;
   border: 1px solid #ddd;
   width: 95%;
+  height: 260px;
   flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   /* NEW */
@@ -31,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .outputHeader h3 {
@@ -61,5 +64,6 @@
   font-size: 0.95rem;
   flex: 1;
   overflow-y: auto;
-  white-space: pre-wrap;
+  overflow-x: auto;
+  white-space: pre;
 }
