@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useStateJson } from "@/hooks/useStateJson";
 import { convertJsonToSchema } from "@/utils/JsonToSchema";
 import { convertJsonToTs } from "@/utils/jsonToTs";
+import { copyToClipboard } from "@/utils/copyToClipboard";
 import { downloadFile } from "@/utils/download";
 import "./OutputPanel.css";
 
