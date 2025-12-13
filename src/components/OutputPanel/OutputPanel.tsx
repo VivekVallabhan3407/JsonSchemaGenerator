@@ -38,7 +38,7 @@ const OutputPanel: React.FC = () => {
 
     downloadFile(tsType,"types.ts","text/typescript");
   };
-  
+
   return (
     <div className="outputContainer">
       <h2 className="heading">Output</h2>
@@ -50,7 +50,7 @@ const OutputPanel: React.FC = () => {
           <button onClick={() => copyToClipboard(schema ?? "")} className="copyBtn">
             Copy
           </button>
-          <button className="downloadBtn">Download</button>
+          <button onClick={handleDownloadSchema} className="downloadBtn" disabled={!schema}>Download</button>
         </div>
 
         <pre className="outputBox">{schema || ""}</pre>
