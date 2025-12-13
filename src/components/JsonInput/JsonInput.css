@@ -89,3 +89,8 @@
 .clearBtn:hover {
   background: #c62828;
 }
+
+.buttons:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
