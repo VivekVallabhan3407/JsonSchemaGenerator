@@ -22,9 +22,9 @@ const OutputPanel: React.FC = () => {
     setTsType(generatedTs);
   }, [jsonObject]);
 
-  const copyToClipboard = (text: string) => {
+  const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
-    alert("Copied!");
+    alert(`Copied ${label} to clipboard!`);
   };
 
   const handleDownloadSchema=()=>{
@@ -47,7 +47,7 @@ const OutputPanel: React.FC = () => {
       <div className="outputBlock">
         <div className="outputHeader">
           <h3>JSON Schema</h3>
-          <button onClick={() => copyToClipboard(schema ?? "")} className="copyBtn">
+          <button onClick={() => copyToClipboard(schema ?? "", "JSON Schema")} className="copyBtn">
             Copy
           </button>
           <button onClick={handleDownloadSchema} className="downloadBtn" disabled={!schema}>Download</button>
@@ -60,7 +60,7 @@ const OutputPanel: React.FC = () => {
       <div className="outputBlock">
         <div className="outputHeader">
           <h3>TypeScript Type</h3>
-          <button onClick={() => copyToClipboard(tsType ?? "")} className="copyBtn">
+          <button onClick={() => copyToClipboard(tsType ?? "", "TypeScript Type")} className="copyBtn">
             Copy
           </button>
           <button onClick={handleDownloadTs} className="downloadBtn" disabled={!tsType}>Download</button>
