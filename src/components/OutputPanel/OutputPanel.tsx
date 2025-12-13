@@ -63,7 +63,7 @@ const OutputPanel: React.FC = () => {
           <button onClick={() => copyToClipboard(tsType ?? "")} className="copyBtn">
             Copy
           </button>
-          <button className="downloadBtn">Download</button>
+          <button onClick={handleDownloadTs} className="downloadBtn" disabled={!tsType}>Download</button>
         </div>
 
         <pre className="outputBox">{tsType || ""}</pre>
