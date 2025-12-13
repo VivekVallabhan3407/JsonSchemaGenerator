@@ -74,3 +74,12 @@
 .formatBtn:hover {
   background: #0064d6;
 }
+
+.clearBtn{
+  background-color: #e63946;
+  color: white;
+}
+
+.clearBtn:hover {
+  background: #c62828;
+}
