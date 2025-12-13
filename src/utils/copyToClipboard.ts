@@ -1,9 +1,15 @@
+import { toast } from 'react-toastify';
+
 export const copyToClipboard = (
   text: string,
   label: string = "content"
 ) => {
-  if (!text) return;
+  if (!text) {
+    toast.error('Nothing to copy!');
+    return;
+
+  }
 
   navigator.clipboard.writeText(text);
-  alert(`Copied ${label} to clipboard!`);
+  toast.success(`Copied ${label} to clipboard!`);
 };
