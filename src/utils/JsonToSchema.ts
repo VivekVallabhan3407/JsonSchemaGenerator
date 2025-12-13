@@ -1,15 +1,16 @@
 // utils/JsonToSchema.ts
 
-export const convertJsonToSchema = (jsonInput: string) => {
-  try {
-    const json = JSON.parse(jsonInput);
-
+export const convertJsonToSchema = (json: any): any => {
     const generateSchema = (value: any): any => {
       if (Array.isArray(value)) {
         return {
           type: "array",
           items: value.length > 0 ? generateSchema(value[0]) : {},
         };
+      }
+
+      if (value === null) {
+        return { type: "null" };
       }
 
       switch (typeof value) {
@@ -20,25 +21,23 @@ export const convertJsonToSchema = (jsonInput: string) => {
         case "boolean":
           return { type: "boolean" };
         case "object":
-          if (value === null) return { type: "null" };
-
-          let properties: any = {};
+          const properties:Record<string,any>={};
+          const required:string[]=[];
+          
           for (const key in value) {
             properties[key] = generateSchema(value[key]);
+            required.push(key);
           }
 
           return {
             type: "object",
             properties,
-            required: Object.keys(value),
+            required,
           };
         default:
           return { type: "string" };
       }
     };
 
-    return JSON.stringify(generateSchema(json), null, 2);
-  } catch (error) {
-    return null; // return null when invalid
-  }
+    return generateSchema(json);
 };
