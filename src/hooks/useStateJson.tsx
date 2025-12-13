@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 type JsonStateType = {
   jsonObject: any;
   setJsonObject: (value: any) => void;
+  clearJsonObject: () => void;
 };
 
 const JsonStateContext = createContext<JsonStateType | undefined>(undefined);
@@ -11,8 +12,12 @@ const JsonStateContext = createContext<JsonStateType | undefined>(undefined);
 export const JsonStateProvider = ({ children }: { children: ReactNode }) => {
   const [jsonObject, setJsonObject] = useState<any>(null);
 
+  const clearJsonObject = () => {
+    setJsonObject(null);
+  };
+
   return (
-    <JsonStateContext.Provider value={{ jsonObject, setJsonObject }}>
+    <JsonStateContext.Provider value={{ jsonObject, setJsonObject, clearJsonObject }}>
       {children}
     </JsonStateContext.Provider>
   );
