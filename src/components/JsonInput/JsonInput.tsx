@@ -5,7 +5,7 @@ import { useStateJson } from "@/hooks/useStateJson";
 import { validateJson } from "@/utils/validateJson";
 
 const JsonInput: React.FC = () => {
-  const { setJsonObject } = useStateJson();
+  const { setJsonObject, clearJsonObject } = useStateJson();
   const [input, setInput] = useState("");
 
   const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -35,6 +35,11 @@ const JsonInput: React.FC = () => {
     }
   };
 
+  const handleClear=()=>{
+    setInput("");
+    clearJsonObject();
+    toast.info("Input cleared"); 
+   };
   return (
     <div className="jsonInputContainer">
       <h2 className="heading">Input JSON</h2>
