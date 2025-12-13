@@ -27,16 +27,16 @@ const OutputPanel: React.FC = () => {
     alert(`Copied ${label} to clipboard!`);
   };
 
-  const handleDownloadSchema=()=>{
-    if(!schema) return;
+  const handleDownloadSchema = () => {
+    if (!schema) return;
 
-    downloadFile(schema,"schema.json","application/json");
+    downloadFile(schema, "schema.json", "application/json");
   };
 
-  const handleDownloadTs=()=>{
-    if(!tsType) return;
+  const handleDownloadTs = () => {
+    if (!tsType) return;
 
-    downloadFile(tsType,"types.ts","text/typescript");
+    downloadFile(tsType, "types.ts", "text/typescript");
   };
 
   return (
@@ -47,10 +47,12 @@ const OutputPanel: React.FC = () => {
       <div className="outputBlock">
         <div className="outputHeader">
           <h3>JSON Schema</h3>
-          <button onClick={() => copyToClipboard(schema ?? "", "JSON Schema")} className="copyBtn">
-            Copy
-          </button>
-          <button onClick={handleDownloadSchema} className="downloadBtn" disabled={!schema}>Download</button>
+          <div className="actionBtns">
+            <button onClick={() => copyToClipboard(schema ?? "", "JSON Schema")} className="copyBtn">
+              Copy
+            </button>
+            <button onClick={handleDownloadSchema} className="downloadBtn" disabled={!schema}>Download</button>
+          </div>
         </div>
 
         <pre className="outputBox">{schema || ""}</pre>
@@ -60,10 +62,13 @@ const OutputPanel: React.FC = () => {
       <div className="outputBlock">
         <div className="outputHeader">
           <h3>TypeScript Type</h3>
-          <button onClick={() => copyToClipboard(tsType ?? "", "TypeScript Type")} className="copyBtn">
-            Copy
-          </button>
-          <button onClick={handleDownloadTs} className="downloadBtn" disabled={!tsType}>Download</button>
+          <div className="actionBtns">
+
+            <button onClick={() => copyToClipboard(tsType ?? "", "TypeScript Type")} className="copyBtn">
+              Copy
+            </button>
+            <button onClick={handleDownloadTs} className="downloadBtn" disabled={!tsType}>Download</button>
+          </div>
         </div>
 
         <pre className="outputBox">{tsType || ""}</pre>

@@ -81,3 +81,9 @@
 .downloadBtn:hover {
   background: #16a34a;
 }
+
+.actionBtns{
+  display: flex;
+  gap:10px;
+  align-items:center;
+}
