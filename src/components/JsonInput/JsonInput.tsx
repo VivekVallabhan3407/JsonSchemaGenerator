@@ -7,7 +7,6 @@ import { validateJson } from "@/utils/validateJson";
 const JsonInput: React.FC = () => {
   const { setJsonObject } = useStateJson();
   const [input, setInput] = useState("");
-  const [error, setError] = useState("");
 
   const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInput(e.target.value);
@@ -17,11 +16,10 @@ const JsonInput: React.FC = () => {
     const result = validateJson(input);
 
     if (!result.valid) {
-      toast.error("Invalid JSON: " + result.error);
+      toast.error("Invalid JSON: ");
       return;
     }
 
-    setError("");
     setJsonObject(result.parsedJson);
     toast.success("JSON processed successfully!");
   };
@@ -31,9 +29,9 @@ const JsonInput: React.FC = () => {
       const parsed = JSON.parse(input);
       const pretty = JSON.stringify(parsed, null, 2);
       setInput(pretty);
-      setError("");
+      toast.success("JSON formatted successfully!");
     } catch {
-      setError("Cannot format invalid JSON");
+      toast.error("Cannot format invalid JSON");
     }
   };
 
@@ -48,7 +46,6 @@ const JsonInput: React.FC = () => {
         className="textarea"
       />
 
-      {error && <p className="error">{error}</p>}
 
       <div className="buttons">
         <button onClick={handleProcess} className="jsonInput-btn generateBtn">
