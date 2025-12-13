@@ -12,7 +12,11 @@ const OutputPanel: React.FC = () => {
   const [tsType, setTsType] = useState<string | null>();
 
   useEffect(() => {
-    if (!jsonObject) return;
+    if (!jsonObject) {
+      setSchema(null);
+      setTsType(null);
+      return
+    };
 
     // Generate schema
     const generatedSchema = convertJsonToSchema(jsonObject);
