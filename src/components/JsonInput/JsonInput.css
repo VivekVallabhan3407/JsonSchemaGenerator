@@ -90,7 +90,7 @@
   background: #c62828;
 }
 
-.buttons:disabled {
-  opacity: 0.6;
+buttons:disabled {
+  opacity: 0.4;
   cursor: not-allowed;
 }
