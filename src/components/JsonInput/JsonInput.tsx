@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import "./JsonInput.css";
 import { useStateJson } from "@/hooks/useStateJson";
 import { validateJson } from "@/utils/validateJson";
@@ -35,11 +35,11 @@ const JsonInput: React.FC = () => {
     }
   };
 
-  const handleClear=()=>{
+  const handleClear = () => {
     setInput("");
     clearJsonObject();
-    toast.info("Input cleared"); 
-   };
+    toast.info("Input cleared");
+  };
   return (
     <div className="jsonInputContainer">
       <h2 className="heading">Input JSON</h2>
@@ -58,6 +58,13 @@ const JsonInput: React.FC = () => {
         </button>
         <button onClick={handleFormat} className="jsonInput-btn formatBtn">
           Format JSON
+        </button>
+        <button
+          onClick={handleClear}
+          className="jsonInput-btn clearBtn"
+          disabled={!input.trim()}
+        >
+          Clear
         </button>
       </div>
     </div>
