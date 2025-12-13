@@ -5,6 +5,10 @@ export const downloadFile=(
     filename: string,
     type: string
 )=>{
+    if(!content){
+        toast.error('Nothing to download!');
+        return;
+    }
     const blob=new Blob([content],{type});
     const url=URL.createObjectURL(blob);
 
@@ -14,4 +18,6 @@ export const downloadFile=(
     a.click();
 
     URL.revokeObjectURL(url);
+
+    toast.success(`Downloaded ${filename} successfully!`);
 }
