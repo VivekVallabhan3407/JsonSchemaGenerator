@@ -53,10 +53,10 @@ const JsonInput: React.FC = () => {
 
 
       <div className="buttons">
-        <button onClick={handleProcess} className="jsonInput-btn generateBtn">
+        <button onClick={handleProcess} className="jsonInput-btn generateBtn" disabled={!input.trim()}>
           Generate
         </button>
-        <button onClick={handleFormat} className="jsonInput-btn formatBtn">
+        <button onClick={handleFormat} className="jsonInput-btn formatBtn" disabled={!input.trim()}>
           Format JSON
         </button>
         <button
