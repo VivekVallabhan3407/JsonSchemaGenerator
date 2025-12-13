@@ -59,6 +59,7 @@ json-schema-generator/
     ├── styles
         └── global.css
     ├── utils
+            ├── download.ts
             ├── JsonToSchema.ts
             ├── jsonToTs.ts
             └── validateJson.ts
