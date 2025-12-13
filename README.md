@@ -58,6 +58,7 @@ json-schema-generator/
     ├── styles
         └── global.css
     ├── utils
+            ├── copyToClipboard.ts
             ├── download.ts
             ├── JsonToSchema.ts
             ├── jsonToTs.ts
