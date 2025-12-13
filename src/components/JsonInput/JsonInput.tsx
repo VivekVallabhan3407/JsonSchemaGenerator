@@ -17,12 +17,13 @@ const JsonInput: React.FC = () => {
     const result = validateJson(input);
 
     if (!result.valid) {
-      setError(result.error || "Invalid JSON");
+      toast.error("Invalid JSON: " + result.error);
       return;
     }
 
     setError("");
     setJsonObject(result.parsedJson);
+    toast.success("JSON processed successfully!");
   };
 
   const handleFormat = () => {
