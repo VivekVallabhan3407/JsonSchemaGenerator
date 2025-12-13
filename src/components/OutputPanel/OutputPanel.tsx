@@ -48,7 +48,7 @@ const OutputPanel: React.FC = () => {
         <div className="outputHeader">
           <h3>JSON Schema</h3>
           <div className="actionBtns">
-            <button onClick={() => copyToClipboard(schema ?? "", "JSON Schema")} className="copyBtn">
+            <button onClick={() => copyToClipboard(schema ?? "", "JSON Schema")} className="copyBtn" disabled={!schema}>
               Copy
             </button>
             <button onClick={handleDownloadSchema} className="downloadBtn" disabled={!schema}>Download</button>
@@ -64,7 +64,7 @@ const OutputPanel: React.FC = () => {
           <h3>TypeScript Type</h3>
           <div className="actionBtns">
 
-            <button onClick={() => copyToClipboard(tsType ?? "", "TypeScript Type")} className="copyBtn">
+            <button onClick={() => copyToClipboard(tsType ?? "", "TypeScript Type")} className="copyBtn" disabled={!tsType}>
               Copy
             </button>
             <button onClick={handleDownloadTs} className="downloadBtn" disabled={!tsType}>Download</button>
