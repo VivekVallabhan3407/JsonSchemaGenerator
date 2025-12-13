@@ -1,6 +1,8 @@
 .outputContainer {
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
   height: 100%;
   gap: 20px;
 }
@@ -19,7 +21,7 @@
   width: 100%;
   flex: 1;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   /* NEW */
   /* optional, matches input */
 }
