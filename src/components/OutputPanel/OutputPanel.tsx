@@ -37,6 +37,7 @@ const OutputPanel: React.FC = () => {
           <button onClick={() => copyToClipboard(schema ?? "")} className="copyBtn">
             Copy
           </button>
+          <button className="downloadBtn">Download</button>
         </div>
 
         <pre className="outputBox">{schema || ""}</pre>
@@ -49,6 +50,7 @@ const OutputPanel: React.FC = () => {
           <button onClick={() => copyToClipboard(tsType ?? "")} className="copyBtn">
             Copy
           </button>
+          <button className="downloadBtn">Download</button>
         </div>
 
         <pre className="outputBox">{tsType || ""}</pre>
