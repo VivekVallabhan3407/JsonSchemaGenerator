@@ -23,11 +23,6 @@ const OutputPanel: React.FC = () => {
     setTsType(generatedTs);
   }, [jsonObject]);
 
-  const copyToClipboard = (text: string, label: string) => {
-    navigator.clipboard.writeText(text);
-    alert(`Copied ${label} to clipboard!`);
-  };
-
   const handleDownloadSchema = () => {
     if (!schema) return;
 
