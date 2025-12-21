@@ -64,7 +64,6 @@ json-schema-generator/
             ├── JsonToSchema.ts
             ├── jsonToTs.ts
             └── validateJson.ts
-    ├── App.css
     ├── App.jsx
     ├── index.css
     └── main.tsx
