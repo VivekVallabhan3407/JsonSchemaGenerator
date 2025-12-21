@@ -1,0 +1,24 @@
+/* src/styles/theme.css */
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --panel-bg: #f9f9f9;
+  --border: #ddd;
+  --btn-bg: #0078ff;
+  --btn-text: #fff;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --panel-bg: #1f1f1f;
+  --border: #333;
+  --btn-bg: #333;
+  --btn-text: #eee;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
