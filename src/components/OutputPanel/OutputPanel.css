@@ -3,7 +3,9 @@
   flex-direction: column;
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #dcdcdc;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
   height: 100%;
   gap: 20px;
 }
@@ -15,10 +17,10 @@
 }
 
 .outputBlock {
-  background: #ffffff;
   padding: 15px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
   width: 95%;
   height: 260px;
   flex: 1;
@@ -43,7 +45,7 @@
 
 .copyBtn {
   padding: 6px 12px;
-  background: #0078ff;
+  background: var(--primary);
   color: white;
   border: none;
   border-radius: 6px;
@@ -52,11 +54,12 @@
 }
 
 .copyBtn:hover {
-  background: #005fcc;
+  background: var(--primary-hover);
 }
 
 .outputBox {
-  background: #f7f7f7;
+  background: var(--input-bg);
+  color: var(--text);
   margin-top: 10px;
   padding: 12px;
   border-radius: 6px;
@@ -70,7 +73,7 @@
 
 .downloadBtn {
   padding: 6px 12px;
-  background: #22c55e;   /* green = action */
+  background: var(--success);   /* green = action */
   color: white;
   border: none;
   border-radius: 6px;
