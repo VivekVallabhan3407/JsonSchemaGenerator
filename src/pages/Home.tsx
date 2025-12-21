@@ -1,6 +1,7 @@
 import React from "react";
 import JsonInput from "@/components/JsonInput/JsonInput";
 import OutputPanel from "@/components/OutputPanel/OutputPanel";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Home = () => {
   return (
