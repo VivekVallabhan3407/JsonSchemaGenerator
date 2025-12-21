@@ -2,18 +2,22 @@
   width: 100%;
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #dcdcdc;
-  background: #fff;
+  background: var(--panel-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
 }
 
 .textarea {
   width: 90%;
-  height: 400px;     /* BIGGER TEXTAREA */
+  height: 400px;
+  /* BIGGER TEXTAREA */
   resize: vertical;
   padding: 9px;
   font-size: 14px;
   font-family: Consolas, monospace;
-  border: 1px solid #ccc;
+  background: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
   border-radius: 6px;
 }
 
@@ -21,7 +25,7 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #333;
+  color: var(--text);
 }
 
 
@@ -45,19 +49,19 @@
 }
 
 .generateBtn {
-    padding: 10px 16px;
+  padding: 10px 16px;
   font-size: 14px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
   transition: 0.2s ease;
-  background: #007bff;
+  background: var(--primary);
   color: white;
   margin-bottom: 20px;
 }
 
 .generateBtn:hover {
-  background: #0064d6;
+  background: var(--primary-hover);
 }
 
 .formatBtn {
@@ -67,15 +71,15 @@
   border: none;
   cursor: pointer;
   transition: 0.2s ease;
-  background: #007bff;
+  background: var(--primary);
   color: white;
 }
 
 .formatBtn:hover {
-  background: #0064d6;
+  background: var(--primary-hover);
 }
 
-.clearBtn{
+.clearBtn {
   padding: 10px 16px;
   font-size: 14px;
   border-radius: 6px;
@@ -87,7 +91,7 @@
 }
 
 .clearBtn:hover {
-  background: #c62828;
+   background: var(--danger);
 }
 
 button:disabled {
