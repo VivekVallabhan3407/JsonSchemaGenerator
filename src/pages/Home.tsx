@@ -7,12 +7,15 @@ const Home = () => {
   return (
     <div className="container">
       <header className="header">
-        <h1 className="title">JSON Schema Generator</h1>
-        <p className="subtitle">
-          Convert JSON to JSON Schema & Typescript Type Instantly
-        </p>
-
-        <ThemeToggle />
+        <div className="header-center">
+          <h1 className="title">JSON Schema Generator</h1>
+          <p className="subtitle">
+            Convert JSON to JSON Schema & TypeScript Type Instantly
+          </p>
+        </div>
+        <div className="header-toggle">
+          <ThemeToggle />
+        </div>
       </header>
 
       <main className="main">
