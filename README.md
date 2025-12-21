@@ -3,7 +3,7 @@
 ## 🧩 JSON Schema Generator
 
 A lightweight tool that converts raw JSON input into a JSON Schema, TypeScript types, and optional sample validation output.
-Built with React + TypeScript for developers who frequently work with structured data or APIs.
+Built with React + TypeScript for developers who frequently work with structured data or APIs. Users can toggle to dark mode for better visiblity at low brightness settings/environments.
 
 ## ✨ Features
 
@@ -22,6 +22,7 @@ Built with React + TypeScript for developers who frequently work with structured
 -  Clean and simple UI (React + TS)
 
 -  No backend, no database — 100% client-side
+
 
 
 ## Tech Stack
