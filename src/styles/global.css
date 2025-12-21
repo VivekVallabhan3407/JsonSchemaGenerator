@@ -17,8 +17,11 @@
 
 .header {
   position: relative;
+  width: 100%;
+  max-width: 1600px;
   padding: 24px 0;
-  margin-bottom: 20px;
+  margin: 0 auto 30px;
+  text-align: center;
 }
 
 /* Perfectly centered block */
@@ -45,10 +48,6 @@
   align-items: flex-start;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 30px;
-}
 
 .title {
   font-size: 32px;
