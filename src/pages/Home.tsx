@@ -11,6 +11,8 @@ const Home = () => {
         <p className="subtitle">
           Convert JSON to JSON Schema & Typescript Type Instantly
         </p>
+
+        <ThemeToggle />
       </header>
 
       <main className="main">
