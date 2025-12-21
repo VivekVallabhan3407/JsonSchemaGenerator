@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import "./theme.css";
+import "../styles/theme.css";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState<"light" | "dark">(
