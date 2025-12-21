@@ -58,6 +58,7 @@ json-schema-generator/
     ├── pages
         └── Home.tsx
     ├── styles
+        ├── theme.css
         └── global.css
     ├── utils
             ├── copyToClipboard.ts
