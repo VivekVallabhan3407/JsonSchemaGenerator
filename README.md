@@ -23,7 +23,7 @@ Built with React + TypeScript for developers who frequently work with structured
 
 -  No backend, no database — 100% client-side
 
-
+-  ThemeToggle- Users can toggle between light and dark mode.
 
 ## Tech Stack
 
