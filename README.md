@@ -49,9 +49,10 @@ json-schema-generator/
         ├── JsonInput
         ├   ├── JsonInput.css
         ├   └── JsonInput.tsx
-        └── OutputPanel
+        ├── OutputPanel
             ├── OutputPanel.css
             └── OutputPanel.tsx
+        └── ThemeToggle.tsx
     ├── hooks
         └── useStateJson.ts
     ├── pages
